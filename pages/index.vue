@@ -1,70 +1,123 @@
 <template>
-  <v-layout column justify-center align-center>
-    <v-flex xs12 sm8 md6>
-      <div class="text-xs-center">
-        <logo />
-        <vuetify-logo />
-      </div>
-      <v-card>
-        <v-card-title class="headline"
-          >Welcome to the Vuetify + Nuxt.js template</v-card-title
-        >
-        <v-card-text>
-          <p>
-            Vuetify is a progressive Material Design component framework for
-            Vue.js. It was designed to empower developers to create amazing
-            applications.
-          </p>
-          <p>
-            For more information on Vuetify, check out the
-            <a href="https://vuetifyjs.com" target="_blank">documentation</a>.
-          </p>
-          <p>
-            If you have questions, please join the official
-            <a href="https://chat.vuetifyjs.com/" target="_blank" title="chat"
-              >discord</a
-            >.
-          </p>
-          <p>
-            Find a bug? Report it on the github
-            <a
-              href="https://github.com/vuetifyjs/vuetify/issues"
-              target="_blank"
-              title="contribute"
-              >issue board</a
-            >.
-          </p>
-          <p>
-            Thank you for developing with Vuetify and I look forward to bringing
-            more exciting features in the future.
-          </p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
-          </div>
-          <hr class="my-3" />
-          <a href="https://nuxtjs.org/" target="_blank">Nuxt Documentation</a>
-          <br />
-          <a href="https://github.com/nuxt/nuxt.js" target="_blank"
-            >Nuxt GitHub</a
-          >
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn color="primary" flat nuxt to="/inspire">Continue</v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-flex>
-  </v-layout>
+    <v-layout row justify-center>
+        <v-flex xs9>
+            <v-timeline>
+                <v-timeline-item
+                        color="indigo darken-4"
+                        fill-dot
+                        right
+                        :icon="'settings'"
+                >
+                    <v-card>
+                        <v-card-title class="indigo darken-4 justify-space-around">
+                            <h2 class="display-1 white--text font-weight-light">Ingénierie immobilière</h2>
+                        </v-card-title>
+                        <v-container>
+                            <v-layout>
+                                <v-flex xs12>
+                                    Opérations de construction pour les entreprises dans les domaines suivants : bureaux, hôtels,
+                                    résidences services, industrie et logistique.
+                                </v-flex>
+                            </v-layout>
+                        </v-container>
+                    </v-card>
+                </v-timeline-item>
+
+                <v-timeline-item
+                        color="blue darken-3"
+                        fill-dot
+                        left
+                        :icon="'build'"
+                >
+                    <v-card>
+                        <v-card-title class="blue darken-3 justify-space-around">
+                            <h2 class="display-1 mr-3 white--text font-weight-light">Savoir-faire</h2>
+                        </v-card-title>
+                        <v-container>
+                            <v-layout>
+                                <v-flex xs12>
+                                    Pour chaque opération nous assurons la conception, le calcul, la prescription et l’exécution
+                                    des opérations jusqu’à l’achèvement.
+                                </v-flex>
+                            </v-layout>
+                        </v-container>
+                    </v-card>
+                </v-timeline-item>
+
+                <v-timeline-item
+                        color="light-blue darken-1"
+                        fill-dot
+                        right
+                        :icon="'question_answer'"
+                >
+                    <v-card>
+                        <v-card-title class="light-blue darken-1 justify-space-around">
+                            <h2 class="display-1 white--text font-weight-light">Compréhension mutuelle</h2>
+                        </v-card-title>
+                        <v-container>
+                            <v-layout>
+                                <v-flex xs12>
+                                    Dossiers sont réalisés sous BIM (modélisation 3D des ouvrages) ce qui permet de
+                                    bien communiquer avec nos preneurs sur les différentes phases du projet avant leur
+                                    réalisation.
+                                </v-flex>
+                            </v-layout>
+                        </v-container>
+                    </v-card>
+                </v-timeline-item>
+
+                <v-timeline-item
+                        color="green accent-3"
+                        fill-dot
+                        left
+                        :icon="'security'"
+                >
+                    <v-card>
+                        <v-card-title class="green accent-3 justify-space-around">
+                            <h2 class="display-1 mr-3 white--text font-weight-light">Garanties</h2>
+                        </v-card-title>
+                        <v-container>
+                            <v-layout>
+                                <v-flex xs12>
+                                    Tous les ouvrages sont couverts par les garanties constructeurs type dommage ouvrage
+                                    et responsabilité civile et décennale.
+                                </v-flex>
+                            </v-layout>
+                        </v-container>
+                    </v-card>
+                </v-timeline-item>
+
+                <v-timeline-item
+                        color="green accent-4"
+                        fill-dot
+                        right
+                        :icon="'check_circle'"
+                >
+                    <v-card>
+                        <v-card-title class="green accent-4 justify-space-around">
+                            <h2 class="display-1 white--text font-weight-light">Qualité</h2>
+                        </v-card-title>
+                        <v-container>
+                            <v-layout>
+                                <v-flex xs12>
+                                    Notre métier est de valoriser l’ouvrage à travers des choix et une optimisation
+                                    technique cohérente afin de devenir un puissant levier de création de valeur au
+                                    service de la performance opérationnelle et financière, mais aussi et avant tout un
+                                    lieu pour la qualité de vie des utilisateurs.
+                                </v-flex>
+                            </v-layout>
+                        </v-container>
+                    </v-card>
+                </v-timeline-item>
+
+            </v-timeline>
+        </v-flex>
+    </v-layout>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import VuetifyLogo from '~/components/VuetifyLogo.vue'
 
 export default {
-  components: {
-    Logo,
-    VuetifyLogo
-  }
+    name: 'index',
 }
 </script>
