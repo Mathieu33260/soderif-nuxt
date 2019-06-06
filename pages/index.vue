@@ -1,7 +1,8 @@
 <template>
-    <v-layout row justify-center>
+    <v-layout row justify-center wrap>
+
         <v-flex xs9>
-            <v-timeline>
+            <v-timeline class="mt-5">
                 <v-timeline-item
                         color="indigo darken-4"
                         fill-dot
@@ -117,7 +118,7 @@
 
 <script>
 
-export default {
-    name: 'index',
-}
+    export default {
+        name: 'index'
+    }
 </script>

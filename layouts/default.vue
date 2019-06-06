@@ -1,12 +1,12 @@
 <template>
-  <v-app>
+  <v-app style="background-image: url('/bg.jpg');">
 
     <v-toolbar fixed flat app class="pa-3">
 
       <v-layout row justify-space-around>
         <v-flex class="text-xs-center">
           <nuxt-link to="/">
-            <img src="~assets/soderif.png">
+            <img src="~/assets/soderif.png">
           </nuxt-link>
         </v-flex>
         <v-flex class="text-xs-center">
@@ -18,9 +18,7 @@
     </v-toolbar>
 
     <v-content>
-      <v-container>
         <nuxt />
-      </v-container>
     </v-content>
 
     <v-footer dark class="pa-5">
